@@ -27,6 +27,9 @@
         <?php 
             echo $text;
             var_dump($text);
+            $badWordsReplacedText = str_replace($_GET["badword"], '***', $text);
+            echo $badWordsReplacedText;
+            var_dump($badWordsReplacedText);
         ?>
     </p>
 </body>
