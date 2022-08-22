@@ -10,7 +10,7 @@
     punti interrogativi selvaggi e subdoli punti e virgola, ma il piccolo testo casuale non si fece certo fuorviare. 
     Raccolse le sue sette maiuscole, fece scorrere la sua iniziale nella cintura, e si mise in cammino. 
     Quando superò i primi colli dei monti Corsivi, si voltò a guardare un’ultima volta la skyline di Lettere, la sua città,
-    la headline del villaggio Alfabeto e la subline della sua stessa strada, il vicolo Riga. Una domanda retorica '
+    la headline del villaggio Alfabeto e la subline della sua stessa strada, il vicolo Riga. Una domanda retorica ';
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,8 @@
     <h1>PHP Badwords</h1>
     <p>
         <?php 
-            echo $text
+            echo $text;
+            var_dump($text);
         ?>
     </p>
 </body>
