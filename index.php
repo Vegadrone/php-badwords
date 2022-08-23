@@ -1,5 +1,5 @@
-<?php 
-    $text= 'In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, 
+<?php
+$text = 'In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, 
     vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico, 
     un immenso oceano linguistico. Un piccolo ruscello chiamato Devoto Oli attraversa quei luoghi, 
     rifornendoli di tutte le regolalie di cui hanno bisogno. È una terra paradismatica, 
@@ -15,22 +15,40 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Badwords</title>
 </head>
+
 <body>
     <h1>PHP Badwords</h1>
     <p>
-        <?php 
-            echo $text;
-            var_dump($text);
-            $badWordsReplacedText = str_replace($_GET["badword"], '***', $text);
-            echo $badWordsReplacedText;
-            var_dump($badWordsReplacedText);
+        <?php
+        echo $text;
         ?>
     </p>
+
+    <p>Lungezza paragrafo:
+        <?php
+        echo strlen($text);
+        ?>
+    </p>
+
+    <p>
+        <?php
+        $badWordsReplacedText = str_replace($_GET["badword"], '***', $text);
+        echo $badWordsReplacedText;
+        ?>
+    </p>
+
+    <p>Lungezza paragrafo:
+        <?php
+        echo strlen($badWordsReplacedText);
+        ?>
+    </p> 
 </body>
+
 </html>
